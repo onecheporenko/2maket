@@ -10,6 +10,11 @@
 
 .home-slider-sect {
     position: relative;
+    margin-top: 60px;
+
+    @media (max-width: 375px) {
+        margin-top: 30px;
+    }
 
     .container {
         margin-bottom: 90px;
@@ -106,7 +111,7 @@
     }
 }
 
-.carousel-inner{
+.carousel-inner {
     border-radius: 12px 0 0 12px;
 }
 
@@ -115,6 +120,8 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    border-radius: 12px;
+    overflow: hidden;
 
     @media (max-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
@@ -131,6 +138,109 @@
     .clients-item {
         img {
             width: 100%;
+        }
+    }
+}
+
+.clients-sect {
+    margin-bottom: 60px;
+    p {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #323264;
+        font-weight: 700;
+        line-height: 1.1;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.footer-sect {
+    background-color: $lightgrey-color;
+}
+
+.footer-text {
+    padding-top: 30px;
+    margin-bottom: 30px;
+
+    .section-heading {
+        margin: 10px 0 0 0;
+    }
+}
+
+.card-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+
+    @media (max-width: 768px) {
+        grid-template-rows: 514px 368px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+
+        :nth-child(3n) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    }
+
+    @media (max-width: 485px) {
+        :nth-child(3n) {
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-body {
+    padding: 0;
+
+    .card-content {
+        padding: 30px;
+
+        hr {
+            // color: #E6E6F0; /*color from figma is not visible on a white card background*/
+            color: $greytext-color;
+            height: 4px;
+        }
+
+        .card-title {
+            a {
+                color: $secondary-color;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.2;
+                text-decoration: none;
+            }
+
+            :hover {
+                color: #0a58ca;
+            }
+        }
+
+        .card-subtitle {
+            color: $greytext-color;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 15px 0;
+        }
+
+        .card-text {
+            color: black;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 15px 0 0 0;
         }
     }
 }
