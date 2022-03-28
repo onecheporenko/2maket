@@ -1,0 +1,101 @@
+.secondary-lang-item,
+.secondary-address,
+.secondary-tel {
+    color: $greytext-color;
+}
+
+.navbar-dark .navbar-nav .secondary-link {
+    color: $secondary-color;
+    position: relative;
+
+    &:hover {
+        color: darken($secondary-color, 10%);
+    }
+
+    &.active {
+        color: $main-color;
+        border-bottom: 2px solid $main-color;
+        padding-bottom: 3px;
+    }
+}
+
+.secondary-toggler {
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2850, 50, 100, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+.team-sect {
+    padding: 180px 0 60px;
+
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        padding: 0px;
+
+        @media (max-width: 768px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .team-info-card-img-top {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}
+
+.team-text {
+    margin: 0 180px 60px;
+    width: 1080px;
+}
+
+.team-name {
+    color: $darkblue-color;
+    padding: 15px 0 5px;
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
+.team-card-content {
+    .slider-text-name {
+        margin: 0px;
+    }
+}
+
+.team-card {
+    position: relative;
+    .pointer {
+        padding: 3px 13px;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: $lightgrey-color;
+        left: 93%;
+        bottom: 5%;
+
+        @media (max-width: 1200px){
+            left: 90%;
+            bottom: 9%;
+        }
+
+        @media (max-width: 990px){
+            left: 85%;
+            bottom: 18%; 
+        }
+
+        // @media (max-width: 768px){
+        //     left: 85%;
+        //     bottom: 18%;
+        // }
+
+        &-svg {
+            :hover {
+                filter: invert(39%) sepia(100%) saturate(6400%) hue-rotate(329deg) brightness(93%) contrast(104%);
+            }
+        }
+    }
+}

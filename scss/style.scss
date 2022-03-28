@@ -2,6 +2,9 @@
 @import "variables";
 @import "header";
 @import "home";
+@import "footer";
+@import "team-page";
+@import "publications-page";
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -13,6 +16,7 @@
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
 }
 
 .section-heading{
@@ -23,3 +27,5 @@
     color: $main-color;
     font-weight: 700;
 }
+
+
