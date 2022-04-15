@@ -15,6 +15,8 @@
     &.active {
         color: $main-color;
         border-bottom: 2px solid $main-color;
+        padding-right: 0px;
+        padding-left: 0px;
         padding-bottom: 3px;
     }
 }
@@ -28,14 +30,31 @@
 .team-sect {
     padding: 180px 0 60px;
 
+    @media (max-width: 576px) {
+        padding: 130px 0 30px;
+    }
+
+    .container {
+        padding: 0;
+
+        @media (max-width: 396px) {
+            max-width: 315px;
+        }
+    }
+
     .team-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 60px;
         padding: 0px;
 
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
         }
 
         .team-info-card-img-top {
@@ -45,57 +64,64 @@
     }
 }
 
-.team-text {
-    margin: 0 180px 60px;
-    width: 1080px;
+.team-text-outer-block {
+    margin: 0 120px 60px 120px;
+
+    @media (max-width: 992px) {
+        margin-top: 100px;
+    }
+
+    @media (max-width: 768px) {
+        margin: 130px 30px 30px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 30px;
+    }
+
+    @media (max-width: 396px) {
+        margin: 0px 0px 30px;
+    }
+
+    &-inner-block {
+        text-align: left;
+    }
 }
 
 .team-name {
     color: $darkblue-color;
-    padding: 15px 0 5px;
+    margin-top: 15px;
 
     &:hover {
         color: $main-color;
     }
 }
 
+.team-role {
+    margin-bottom: 0;
+}
+
 .team-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     .slider-text-name {
         margin: 0px;
     }
 }
 
-.team-card {
-    position: relative;
-    .pointer {
-        padding: 3px 13px;
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        border-radius: 50%;
-        background-color: $lightgrey-color;
-        left: 93%;
-        bottom: 5%;
+.pointer {
+    &:hover .svg-pointer {
+        stroke: $main-color;
+    }
+    @media (max-width: 576px) {
+        transform: rotate(-90deg);
+    }
+}
 
-        @media (max-width: 1200px){
-            left: 90%;
-            bottom: 9%;
-        }
-
-        @media (max-width: 990px){
-            left: 85%;
-            bottom: 18%; 
-        }
-
-        // @media (max-width: 768px){
-        //     left: 85%;
-        //     bottom: 18%;
-        // }
-
-        &-svg {
-            :hover {
-                filter: invert(39%) sepia(100%) saturate(6400%) hue-rotate(329deg) brightness(93%) contrast(104%);
-            }
-        }
+.navbar-team-logo {
+    @media (max-width: 477px) {
+        width: 141px;
     }
 }

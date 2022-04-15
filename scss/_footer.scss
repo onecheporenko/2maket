@@ -1,27 +1,46 @@
-.end-sect{
+.end-sect {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+
+    @media (max-width: 765px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-.left-col{
+.left-col {
     margin-bottom: 30px;
 
-    .navbar-address{
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom: 21px;
+    .navbar-address {
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 21px;
+
+        @media (max-width: 765px) {
+            margin-bottom: 10px;
+        }
+    }
+    .navbar-tel,
+    .navbar-address {
+        @media (max-width: 765px) {
+            display: block;
+        }
     }
 
-    .map, .navbar-tel, .navbar-mail{
+    .map,
+    .navbar-tel,
+    .navbar-mail {
         font-weight: 700;
     }
 
-    .navbar-tel, .navbar-mail, .right-col{
+    .navbar-tel,
+    .navbar-mail,
+    .right-col {
         font-size: 16px;
     }
 
-    .map{
+    .map {
         font-size: 12px;
         text-transform: uppercase;
         text-decoration: none;
@@ -32,26 +51,28 @@
         }
     }
 
-    .navbar-tel, .navbar-address{ 
+    .navbar-tel,
+    .navbar-address {
         color: #323264;
 
-        &:hover{
+        &:hover {
             color: lighten(#323264, 20%);
         }
     }
 
-    .navbar-mail{
+    .navbar-mail {
         color: $secondary-color;
         text-decoration: none;
 
         &:hover {
-            color: #0a58ca;
+            color: $main-color;
         }
     }
 
-    .footer-fb, .navbar-address, .navbar-tel {
-
-        &::after{
+    .footer-fb,
+    .navbar-address,
+    .navbar-tel {
+        &::after {
             content: "";
             width: 6px;
             height: 6px;
@@ -61,19 +82,38 @@
             margin: 0 6px;
             transform: translateY(-2px);
 
+            @media (max-width: 765px) {
+                display: none;
+            }
         }
     }
 }
 
-.right-col{
+.footer-fb {
+    &:hover {
+        fill: $main-color;
+    }
+}
+.adress-map {
+    @media (max-width: 765px) {
+        margin-bottom: 21px;
+    }
+}
+
+.right-col {
     color: $greytext-color;
 }
 
-
-.footer-line{
+.footer-line {
     height: 2px;
     color: $greytext-color;
     margin-top: 30px;
 }
 
-
+.cont {
+    .navbar-tel {
+        @media (max-width: 765px) {
+            margin: 10px 0;
+        }
+    }
+}

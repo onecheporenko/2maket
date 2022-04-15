@@ -1,0 +1,27 @@
+.services-sect {
+    padding: 180px 0 0px;
+
+    @media (max-width: 576px) {
+        padding: 60px 0 0px;
+    }
+}
+
+.services-clients-sect {
+    margin-bottom: 0px;
+
+    .title-client-sect {
+        margin: 60px 0 30px;
+    }
+}
+
+.services-heading {
+    @media (max-width: 992px) {
+        padding-top: 60px;
+    }
+}
+
+.navbar-services-logo {
+    @media (max-width: 400px) {
+        width: 168px;
+    }
+}
