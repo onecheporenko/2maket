@@ -118,6 +118,7 @@
         background: white;
         width: 100%;
         height: 56px;
+        padding-left: 15px;
 
         &:focus {
             outline-color: #24a3ff;
@@ -140,7 +141,7 @@
     }
     .element-text {
         height: 130px;
-        padding: 15px 0;
+        padding: 15px 0 0 15px;
     }
 
     .button {

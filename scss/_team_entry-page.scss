@@ -1,0 +1,132 @@
+.team-member {
+    padding: 180px 0 0px;
+
+    @media (max-width: 992px) {
+        padding-top: 280px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 132px;
+    }
+}
+
+.team-member-container {
+    padding: 0;
+
+    @media (max-width: 1920px) {
+        max-width: 1360px;
+    }
+
+    @media (max-width: 1440px) {
+        max-width: 1080px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 904px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 648px;
+    }
+
+    @media (max-width: 376px) {
+        max-width: 315px;
+    }
+}
+
+.team-member-content {
+    display: flex;
+    gap: 60px;
+
+    @media (max-width: 860px) {
+        align-items: center;
+        gap: 30px;
+    }
+
+    @media (max-width: 376px) {
+        flex-direction: column;
+    }
+}
+
+.team-member-img {
+    max-width: 400px;
+    max-height: 500px;
+
+    img {
+        width: 100%;
+    }
+}
+.team-member-contacts {
+    max-width: 620px;
+}
+
+.team-member-role {
+    display: inline-block;
+}
+
+.member-mail,
+.member-in {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.22;
+    color: $secondary-color;
+}
+
+.team-member-role,
+.member-mail {
+    &::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #e6e6f0;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 6px;
+        transform: translateY(-2px);
+    }
+}
+
+.member-in {
+    @media (max-width: 860px) {
+        display: block;
+    }
+}
+
+.member-mail {
+    @media (max-width: 860px) {
+        padding: 10px 0 10px 0;
+    }
+}
+
+.team-member-experience-content {
+    margin: -386px 0 60px calc(30% + 53px);
+    border-top: 4px solid #e6e6f0;
+    padding-top: 30px;
+
+    @media (max-width: 1440px) {
+        margin: -386px 0 60px calc(37% + 60px);
+    }
+
+    @media (max-width: 1024px) {
+        margin: -300px 0 60px calc(39% + 54px);
+    }
+
+    @media (max-width: 860px) {
+        margin: 30px 0 60px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.63;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.22;
+        letter-spacing: 1px;
+        color: $darkblue-color;
+        text-transform: uppercase;
+        margin: 30px 0 15px;
+    }
+}

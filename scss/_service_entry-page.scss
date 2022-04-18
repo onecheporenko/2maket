@@ -107,3 +107,39 @@ ul {
 .line_bottom_2 {
     margin-bottom: 60px;
 }
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #6f6f92;
+    display: none;
+}
+
+.popup.opened{
+    display: flex;
+}
+
+.popup-dialog {
+    max-width: 650px;
+    box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+    margin: auto;
+}
+
+.heading-close-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-close {
+    background-image: url(../img/popup-close.svg);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
