@@ -15,12 +15,24 @@
 }
 
 .publ-container {
-    @media (min-width: 1920px) {
+    @media (max-width: 1920px) {
         max-width: 1360px;
     }
 
-    @media (min-width: 1440px) {
+    @media (max-width: 1440px) {
         max-width: 1080px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 904px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 648px;
+    }
+
+    @media (max-width: 376px) {
+        max-width: 315px;
     }
 }
 
@@ -132,4 +144,3 @@ li span {
         width: 212px;
     }
 }
-

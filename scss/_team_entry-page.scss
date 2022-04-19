@@ -45,6 +45,7 @@
 
     @media (max-width: 376px) {
         flex-direction: column;
+        align-items: start;
     }
 }
 
@@ -83,17 +84,19 @@
         display: inline-block;
         margin: 0 6px;
         transform: translateY(-2px);
-    }
-}
 
-.member-in {
-    @media (max-width: 860px) {
-        display: block;
+        @media (max-width: 1024px) {
+            display: none;
+        }
     }
 }
 
 .member-mail {
-    @media (max-width: 860px) {
+    @media (max-width: 1024px) {
+        display: block;
+    }
+
+    @media (max-width: 1024px) {
         padding: 10px 0 10px 0;
     }
 }
@@ -108,7 +111,7 @@
     }
 
     @media (max-width: 1024px) {
-        margin: -300px 0 60px calc(39% + 54px);
+        margin: -330px 0 60px calc(44% + 65px);
     }
 
     @media (max-width: 860px) {

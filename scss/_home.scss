@@ -36,23 +36,23 @@
     }
 }
 
-.line_1, .line_2 {
+.line_1,
+.line_2 {
     background: #cacadb;
     height: 10px;
     border-radius: 0px 0px 12px 12px;
     margin: auto;
 }
 
-.line_1{
+.line_1 {
     background: #cacadb;
     max-width: 95%;
 }
 
-.line_2{
+.line_2 {
     background: #e7e7f2;
     max-width: 90%;
 }
-
 
 .home-slider-sect .carousel-item {
     background-color: $lightgrey-color;
@@ -231,23 +231,6 @@
     padding-top: 30px;
     margin-bottom: 30px;
 
-    // .subheading {
-    //     &::after {
-    //         content: "";
-    //         background-image: url(../img/pointer-img.svg);
-    //         background-position: center;
-    //         background-repeat: no-repeat;
-    //         background-size: contain;
-    //         display: inline-block;
-    //         width: 12px;
-    //         height: 12px;
-    //         position: absolute;
-    //         left: 112px;
-    //         top: 50%;
-    //         transform: translateY(-50%);
-    //     }
-    // }
-
     .section-heading {
         margin: 10px 0 0 0;
     }
@@ -296,7 +279,6 @@
         padding: 30px;
 
         hr {
-            // color: #E6E6F0; /*color from figma is not visible on a white card background*/
             color: $greytext-color;
             height: 4px;
         }
@@ -389,23 +371,6 @@
         }
     }
 
-    // .subheading {
-    //     &::after {
-    //         content: "";
-    //         background-image: url(../img/pointer-img.svg);
-    //         background-position: center;
-    //         background-repeat: no-repeat;
-    //         background-size: contain;
-    //         display: inline-block;
-    //         width: 12px;
-    //         height: 12px;
-    //         position: absolute;
-    //         left: 73px;
-    //         top: 50%;
-    //         transform: translateY(-50%);
-    //     }
-    // }
-
     .section-heading {
         margin: 10px 0 60px;
 
@@ -455,7 +420,6 @@
         overflow: hidden;
 
         @media (max-width: 1240px) {
-            // width: 60%;
             margin-right: 0px !important;
             min-width: 375px;
         }
